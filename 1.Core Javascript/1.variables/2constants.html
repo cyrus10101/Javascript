@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="content"></p>
+    <script>
+        const myBirthday = "11/01/2007";
+        //myBirthday = "1/1/3000"; -> this throws error.
+        document.getElementById("content").innerHTML = myBirthday;
+
+        // Widespread practice to use constants aliases difficulta to rememer values are named in upper case
+        const COLOR_RED = "#F00";
+        const COLOR_GREEN = "0F0";
+        const COLOR_BLUE = "#00F";
+        const COLOR_ORANGE = "#FF7F00";
+
+        // When we need to pick a color
+        let color = COLOR_GREEN;
+        alert(color);
+    </script>
+</body>
+</html>

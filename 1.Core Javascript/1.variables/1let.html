@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="content"></p>
+    <script>
+        /*
+        How to properly name variable:
+        -when the name contains multiple words, camelCase is commonly used.(like: let myName or let myVeryLongName)
+        */
+        /*
+        Note: Declaring same variable twwice can trigger an error. and we can't use reserved names like let and return etc 
+        */
+        let name = "cyrus";
+        let age = "19";
+        let gender = "male";
+        document.getElementById("content").innerHTML = name + " " + age + " " + gender;
+        let message;
+        message = "Hello";
+        alert(message);
+    </script>
+</body>
+</html>
