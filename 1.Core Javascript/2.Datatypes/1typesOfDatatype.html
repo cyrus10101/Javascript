@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="infinity"></p>
+    <p id="nan"></p>
+    <p id="stringText"></p>
+    <p id="boolText"></p>
+    <script>
+        // Beside regular ther are so called numberic values which belongs to dattype like Infinity and Nan
+        let infin = 1/0;
+        let notNumber = "not a number" / 2;
+        document.getElementById("infinity").innerHTML = infin;
+        document.getElementById("nan").innerHTML = notNumber;
+
+        // Types of Datatype are:
+        //1) BigInt
+            // number larger than 2^53 -1 cannot be store in number type so we use bigInt
+            const largeNumber = 123535223244332432423434324322n; // n at the end means bigInt
+
+        //2) String (Note: There is no char in javascript unlike c++, java etc)
+            // Types of string in javascript
+            let str = "Hello";
+            let str2 = 'single quotes are ok too';
+            let pharse = `can embed another string like ${str} ${str2} `;
+            document.getElementById("stringText").innerHTML = pharse;
+
+        //3) Boolean(Logical type)
+            // same like in other language it has true or false
+            let nameFieldChecked = true;
+            let ageFieldChecked = false;
+
+            let isGreater = 4 > 1;
+            document.getElementById("boolText").innerHTML = isGreater;
+        //4) The "null" Value
+        //5) the "undefined" value
+        //6) Objects and Symbols
+        //7) The typeof operator
+    </script>
+</body>
+</html>
