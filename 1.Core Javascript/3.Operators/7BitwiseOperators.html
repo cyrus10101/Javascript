@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text1"></h1>
+    <h1 id="text2"></h1>
+    <script>
+        // Bitwise Operator.
+        /*
+        Bitwise operators treat argumets as 32-bit integer numbers and work on the level 
+        of binary representation. 
+        It's not only in javascript. They are supported in most of progamming langauges.
+
+        They are:
+        . AND(&)
+        . OR(|)
+        . XOR(^)
+        . NOT(~)
+        . LEFT SHIFT(<<)
+        . RIGHT SHIFT(>>)
+        . ZERO-FILL RIGHT SHIFT(>>>)
+
+        */
+
+        /*
+        Comma: 
+        .comma has a very low precedence and rarest in use.
+        */
+       //example
+       let a = (1 + 2, 3 + 4);
+       document.getElementById("text1").innerHTML = a; // It evalutes first expressiion and then throw away and return evlates and return second expression.
+
+       // Three operation in one line. but not recommended.
+       for(a = 1, b = 3, c = a * b; a < 10; a++){
+        console.log(c);
+       }
+    </script>
+</body>
+</html>

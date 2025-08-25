@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text1"></h1>
+    <script>
+        // let a = prompt("First number: ", 1);
+        // let b = prompt("second number: ", 2);
+        // document.getElementById("text1").innerHTML = a + b; // 11
+        // So in order add number in int form we use unary addition.
+        // first way.
+        let aa = +prompt("First number: ", 1);
+        let bb = +prompt("Second number: ", 2);
+        document.getElementById("text1").innerHTML = aa + bb;
+
+        // second way and we dont need to use + in front of prompt.
+        c = +aa + +bb;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+    <p id="text4"></p>
+    <p id="text5"></p>
+    <p id="text6"></p>
+    <p id="text7"></p>
+    <script>
+        // String Concatentation with binary + 
+        // usually, the plus operator " + " sums numbers. But if the binary + is appliecd to strngs, it merges concatenates them
+
+        let s = "my " + "string";
+        document.getElementById("text1").innerHTML = s;
+
+        // Note if any of the operands is a string the other one is converted to a string too.
+        document.getElementById("text2").innerHTML = "1" + 2; // "12"
+        // it does not atter whether the first operand is a stirng or the second one if any of operands is sting it converts all to string.
+        document.getElementById("text3").innerHTML = 2 + 2 + "1"; // "41" an not "221".
+        document.getElementById("text4").innerHTML = "1" + 2 + 2; // "122" AND NOT "14".
+
+        // The binary ' + ' i the only operator that supports strings in such a way. 
+        // other arthematic operator work only with numbera and always convert their operands to numbers. like,
+        document.getElementById("text5").innerHTML = (6 - "2") // 4, converts '2' to a number
+        document.getElementById("text6").innerHTML = ('6' * 2) // 12, converts '6' to integer.
+        document.getElementById("text7").innerHTML = ('2' - '1')// 1, converts both operands to integer.
+
+
+    </script>
+</body>
+</html>

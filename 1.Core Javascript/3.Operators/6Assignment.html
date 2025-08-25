@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text1"></h1>
+    <h1 id="text2"></h1>
+    <p class="h2"></p>
+    <script>
+        // Assignment
+        // It can be used as operator as well example.
+        let a = 1;
+        let b = 2;
+        
+        let c = 3 - (a = b + 1);
+        document.getElementById("text1").innerHTML = a;
+        document.getElementById("text2").innerHTML = c;
+
+        // Chaining assignments (but its not better to do it this we should split it for better readeability)
+        let aa, bb, cc;
+        aa = bb = cc = 2 + 2;
+        console.log(aa, bb, cc);
+        i = 1;
+        j = 1;
+        console.log(i++); 
+        console.log(++j);
+    </script>
+</body>
+</html>

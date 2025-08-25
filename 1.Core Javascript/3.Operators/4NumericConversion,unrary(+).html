@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+    <p id="text4"></p>
+    <p id="text5"></p>
+    <p id="text6"></p>
+    <p id="text7"></p>
+    <p id="text8"></p>
+    <h1 id="numericConversion"></h1>
+    <script>
+        // Numeric converstion, unary + 
+        // unary plus or + operator applied to single value doesn't do anything to numers
+        // but if the operands  is not a number, the unary plus converts it into a number. for example,
+            // No effect on numbers
+            let x = 1;
+            document.getElementById("text1").innerHTML = +x; // 1
+            let y = -2
+            document.getElementById("text2").innerHTML = +y; // -2
+
+            // Converts into numbers.
+            document.getElementById("text3").innerHTML = +true; // 1
+            document.getElementById("text4").innerHTML = -true; // -1
+            document.getElementById("text5").innerHTML = +false; // 0
+            document.getElementById("text6").innerHTML = -false; // 0
+            document.getElementById("text7").innerHTML = +""; // 0
+
+        // use of unary(+)  or when to use it: 
+        let apples = "2";
+        let oranges = "3";
+        document.getElementById("text8").innerHTML = apples + oranges; // "23", the binary plus concatenates strings.
+        document.getElementById("numericConversion").innerHTML = +apples + +oranges; // 5, converts string to numeric form and then adds
+        // same like int(apples) + int(oranges).
+
+    </script>
+</body>
+</html>
