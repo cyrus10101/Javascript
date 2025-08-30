@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="text1"></h1>
+    <script>
+        // OR operator.
+        result = a || b;
+        // all possible comination
+        // alert(true || true); / true
+        // alert(false || true); // true
+        // alert(true || false) // true
+        // alert(false || false); // false
+
+        // OR '||' finds the first truthy value
+        alert(1 || 0); // 1 (1 is truthy)
+        alert(null || 1); // 1 (1 is the first truthy value)
+        alert(null || 0 || 1); // 1 (the first truthy value)
+        alert(undefined || null || 0); // 0 (all falsy, returns the last value)
+
+        let firstName = "";
+        let lastName = "";
+        let nickName = "SuperCoder";
+
+        alert(firstName || lastName || nickName || "Anoymous"); // SuperCoder
+
+        // 2.Short circuit evaluation.
+        // example 
+        true || alert("not printed"); // doesn't run
+        false || alert("printed"); // runs
+
+        // && (AND)
+        result = a && b;
+        
+        // AND "&&" finds the first falsy value and returns it.
+        result = value1 && value2 && value3;
+
+        // !(NOT)
+        result = !value;
+        alert(!true); // false
+        alert(!0); // true
+
+        // A double NOT !! is sometimes used for converting a value to boolean type:
+        alert(!! "not-empty string"); // true
+        alert(!!null); // false
+
+    </script>
+</body>
+</html>
